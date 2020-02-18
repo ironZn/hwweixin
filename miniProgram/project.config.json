@@ -12,7 +12,7 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.6.5",
+	"libVersion": "2.0.4",
 	"appid": "wx37524641fd7b7e04",
 	"projectname": "hwminiprogram-test-1",
 	"debugOptions": {
