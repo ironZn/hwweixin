@@ -1,0 +1,14 @@
+.intro-container {
+  padding: 20rpx;
+}
+.img-con {
+  text-align: center;
+  padding: 0 20rpx;
+}
+.text-con {
+  padding: 0 20rpx;
+}
+.text-con view {
+  margin-top: 20rpx;
+  font-size: 26rpx;
+}

@@ -1,0 +1,67 @@
+/* pages/start/start.wxss */
+.top-title {
+  font-size: 28rpx;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Microsoft YaHei"
+}
+.btn-con {
+  text-align: right;
+  padding: 0 20rpx;
+  margin: 15rpx 0;
+}
+.btn-con span {
+  margin: 0;
+  padding: 5rpx 10rpx;
+  width: 80rpx;
+  border: 2rpx solid green;
+  border-radius: 10rpx;
+  text-align: center;
+  color: green;
+  font-size: 16rpx;
+  font-weight: bold;
+}
+.btn-con .keng {
+  border: 2rpx solid orange;
+  color: orange;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+.chart-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 26rpx;
+  font-family: "Microsoft YaHei"
+}
+.canvas {
+  width: 700rpx;
+  height: 400rpx;
+}
+.table-content {
+  font-size: 22rpx;
+  font-family: "Microsoft YaHei"
+}
+.iconzuo {
+  font-size: 26rpx;
+  font-family: "Microsoft YaHei"
+}
+.title {
+  position: relative;
+  width: 100%;
+	text-align: center;
+	margin: 10rpx 0;
+  overflow: hidden;
+}
+
+.back-btn {
+  position: absolute;
+  left: 12%;
+}
+
+

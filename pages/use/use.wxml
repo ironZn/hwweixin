@@ -1,0 +1,14 @@
+<!--pages/use/use.wxml-->
+<view class="intro-container">
+  <view class="text-con">
+    <view>使用说明：</view>
+  </view>
+  <view class='img-con'>
+      <image src='/assets/img/useIntro.png' data-src="/assets/img/useIntro.png"></image>
+  </view>
+  <view class="text-con">
+    <view>图表：点击柱状栏目会下钻到它的下一级，下钻后点击返回按钮回到上一级</view>
+    <view>表格：支持折叠展开，自定义数字排序，自定义css样式</view>
+    <view>点击图表的柱状栏目，表格的数据也跟着联动下钻，返回亦是如此</view>
+  </view>
+</view>

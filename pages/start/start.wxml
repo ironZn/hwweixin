@@ -1,0 +1,25 @@
+<!--pages/start/start.wxml-->
+<view class="top-title">wp-图表下钻联动</view>
+<view class="chart-content">
+	<view class="title">
+		<span wx:if="{{!isMainChartDisplay}}" class="iconfont iconzuo back-btn" bindtap="backToMainChart">返回</span>
+    <span>{{chartTitle}}</span>
+	</view>
+  <canvas canvas-id="columnCanvas" class="canvas" bindtouchstart="touchHandler"></canvas>
+</view>
+<view class="btn-con">
+  <span type="primary" plain="true" bindtap="useIntro">使用说明</span>
+</view>
+<view class="table-content">
+  <x-table table-data="{{tableData}}" expend="show">
+    <x-table-column col-label="地区" col-prop="regionName" css="font-weight:bold"></x-table-column>
+    <x-table-column col-label="供应商" col-prop="supplier" sort="desc"></x-table-column>
+    <x-table-column col-label="服务中心" col-prop="serviceCenter"></x-table-column>
+    <x-table-column col-label="人员数量" col-prop="perNumber"></x-table-column>
+    <x-table-column col-label="其他" col-prop="other" css="font-weight:bold;color:green"></x-table-column>
+  </x-table>
+</view>
+<view class="btn-con flex">
+  <span type="primary" plain="true" bindtap="designIntro">设计说明</span>
+  <span class="keng" type="warn" plain="true" bindtap="keng">彩蛋</span>
+</view>

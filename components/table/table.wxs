@@ -1,0 +1,9 @@
+var sortFlag = function(sort) {
+  if (sort) {
+    return sort.includes(' asc') || sort.includes(' des')
+  }
+}
+
+module.exports = {
+  sortFlag: sortFlag
+}

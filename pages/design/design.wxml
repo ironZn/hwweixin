@@ -1,0 +1,17 @@
+<!--pages/design/desion.wxml-->
+<view class="intro-container">
+  <view class="text-con">
+    <view>设计说明:</view>
+    <view>小程序分为图表和表格两部分，业务场景来自于wp服务经理视图roi三期,也参照了微信的疫情动态图。</view>
+    <view>总体来看，小程序的操作很简单，具备图表联动展示的基本功能。</view>
+    <view>图表来自于微信工具组件xwCharts，完成了图表基本展示和下钻。</view>
+    <view>表格是我自己用div拼起来的，支持基本的折叠展开，排序，样式。然后。。。就是一些操作了。</view>
+    <view class='img-con'>
+        <image src='/assets/img/design.png' data-src="/assets/img/design.png"></image>
+    </view>
+    <view>当看到这一幕的时候是不是觉得很熟悉，没错，我把它给封装成一个组件了，和xui调用组件操作手法类似。</view>
+    <view>在整体操作上，表格数据根据图表下钻进行联动，把pc端的局部功能已经移植了过来，但目前由于各种原因只完成了初步，还需要往后微信官方团队的支持。</view>
+    <view></view>
+    <view>用vue的思想去开发一个小程序，基本操作完全胜任，但往深了看，又是各种不支持。详情请看彩蛋。</view>
+  </view>
+</view>

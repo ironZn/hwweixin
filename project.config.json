@@ -5,6 +5,7 @@
 	},
 	"setting": {
 		"urlCheck": true,
+    "checkSiteMap": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -33,13 +34,57 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
-		"miniprogram": {
+		"gamePlugin": {
 			"current": -1,
 			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/chart/chart",
+					"pathName": "pages/chart/chart",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/start/start",
+					"pathName": "pages/start/start",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/use/use",
+					"pathName": "pages/use/use",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/design/desion",
+					"pathName": "pages/design/desion",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/keng/keng",
+					"pathName": "pages/keng/keng",
+					"query": "",
+					"scene": null
+				}
+			]
 		}
 	}
 }

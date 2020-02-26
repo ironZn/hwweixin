@@ -1,0 +1,2 @@
+<!--components/table-column/table-column.wxml-->
+<slot></slot>

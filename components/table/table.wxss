@@ -1,0 +1,47 @@
+/* components/table/table.wxss */
+@import "/css/iconfont.wxss";
+.t-content {
+  padding: 0 20rpx;
+}
+.t-head {
+  text-align: center;
+}
+.t-body {
+  height: 400rpx;
+}
+.header-item {
+  background: #eeeeee;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.center {
+  text-align: center
+}
+.hide {
+  display: none
+}
+.flex {
+  display: flex;
+  justify-content: space-between
+}
+.t-item {
+  position: relative;
+  /* height: 60rpx; */
+  line-height: 60rpx;
+  border-bottom: 1rpx solid #dddddd;
+}
+.expand {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.t-row {
+  display: inline-block;
+}
+.t-hide-row {
+  border-top: 1rpx solid #dddddd;
+}
+.font-reset {
+  font-size: 24rpx;
+  color:royalblue;
+}

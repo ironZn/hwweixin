@@ -1,5 +1,9 @@
 {
   "pages": [
+    "pages/start/start",
+    "pages/use/use",
+    "pages/design/design",
+    "pages/keng/keng",
     "pages/index/index",
     "pages/logs/logs"
   ],

@@ -1,0 +1,31 @@
+<!--components/table/table.wxml-->
+<!-- index === 0 ? 24 : (1-0.24)/(thead.length-1)*100-0.5 -->
+<view class="t-content">
+  <view class="t-head flex">
+    <view class="header-item" style="width:{{1/thead.length*100-0.5}}%"  wx:for="{{thead}}"wx:for-index="index" wx:key="index" wx:for-item="item">
+      <span>{{ item.colLabel }}  </span>
+      <div wx:if="{{item.sort === 'asc' || item.sort === 'desc'}}" bindtap="makeSort" data-sortflag="{{item}}">
+        <span class="iconfont {{item.sort === 'asc' ? 'icontriangle-top' : 'icontriangle-bottom'}} font-reset"></span>
+      </div>
+    </view>
+  </view>
+  <scroll-view class="t-body" scroll-y="{{true}}">
+    <view class="t-item center" wx:for="{{tableData}}" wx:for-index="index" wx:key="index" wx:for-item="item">
+      <div wx:if="{{expend === 'show' && item.children && item.children.length}}" bindtap="showExpend" id="{{index}}" class="expand">
+        <span class="iconfont  {{item.show ? 'icontriangle-top' : 'icontriangle-bottom'}} font-reset"></span>
+      </div>
+      <view bindtap="showExpend" id="{{index}}" class="t-row" style="width:{{1/thead.length*100-0.5}}%" wx:for="{{thead}}" wx:for-index="key" wx:key="key" wx:for-item="el">
+        <span style="{{el.css}}">{{ item[el.colProp] }}</span>
+      </view>
+      <view class="{{item.show ? '' : 'hide'}}">
+        <view class="t-hide-row" wx:for="{{item.children}}" wx:for-index="key2" wx:key="key2" wx:for-item="elm">
+          <div style="width:{{1/thead.length*100-0.5}}%"  class="t-row" wx:for="{{thead}}" wx:for-index="key3" wx:key="key3" wx:for-item="elc">
+            <span>{{ elm[elc.colProp] }}</span>
+          </div>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+<slot></slot>
+
